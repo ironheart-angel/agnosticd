@@ -50,8 +50,8 @@
     field_selectors:
       - status.phase=Running
   register: r_redis_pod
-  retries: 120
-  delay: 10
+  retries: 40
+  delay: 30
   until: r_redis_pod.resources | list | length == 1
 
 - name: url var
