@@ -22,6 +22,6 @@
       - status.phase=Running  
   register: result
   until: result.resources | length == 1
-  retries: 40
-  delay: 10
+  retries: 20
+  delay: 30
     
